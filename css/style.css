@@ -80,6 +80,7 @@ body {
   color: var(--text-color);
   background-color: var(--white-color);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -1298,4 +1299,384 @@ input, textarea, select {
     grid-template-columns: 1fr;
     text-align: center;
   }
+}
+/* =======================================================
+   EXTRA RESPONSIVE FIXES
+   Add this at the END of style.css
+=======================================================*/
+
+/* Prevent horizontal scrolling */
+
+
+/* Better responsive images */
+
+
+/* Responsive iframe */
+iframe{
+    width:100%;
+    max-width:100%;
+}
+
+/* Large Laptop */
+@media (max-width:1200px){
+
+.container{
+    width:92%;
+    padding:0 20px;
+}
+
+.hero__title{
+    font-size:3rem;
+}
+
+}
+
+/* Laptop */
+@media (max-width:1024px){
+
+.container{
+    width:94%;
+}
+
+.hero{
+    min-height:100vh;
+}
+
+.hero__title{
+    font-size:2.8rem;
+}
+
+.hero__description{
+    font-size:1rem;
+}
+
+.section{
+    padding:5rem 0;
+}
+
+.services__container,
+.projects__container,
+.gallery__container{
+    gap:20px;
+}
+
+}
+
+/* Tablet */
+@media (max-width:768px){
+
+.section{
+    padding:4rem 0;
+}
+
+.section__title{
+    font-size:2rem;
+}
+
+.hero{
+    min-height:100vh;
+    height:auto;
+    padding:130px 0 70px;
+    text-align:center;
+}
+
+.hero__content{
+    max-width:100%;
+}
+
+.hero__buttons{
+    justify-content:center;
+}
+
+.hero__trust{
+    justify-content:center;
+}
+
+.hero__scroll{
+    display:none;
+}
+
+.about__container,
+.contact__container{
+    grid-template-columns:1fr;
+}
+
+.about__image{
+    order:-1;
+}
+
+.about__image img{
+    height:350px;
+}
+
+.about__features{
+    grid-template-columns:1fr;
+}
+
+.process__step{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.step__number{
+    margin:auto;
+}
+
+.contact__form{
+    padding:2rem;
+}
+
+.gallery__container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.projects__container{
+    grid-template-columns:1fr;
+}
+
+.services__container{
+    grid-template-columns:1fr;
+}
+
+.footer__container{
+    grid-template-columns:1fr 1fr;
+}
+
+.nav__cta{
+    display:none;
+}
+
+}
+
+/* Mobile */
+@media (max-width:576px){
+
+.nav{
+    height:70px;
+}
+
+.logo-subtext{
+    display:none;
+}
+
+.nav__menu{
+    width:100%;
+}
+.container{
+    padding:0 15px;
+}
+
+.section{
+    padding:3.5rem 0;
+}
+
+.hero{
+    padding-top:110px;
+}
+
+.hero__title{
+    font-size:2rem;
+    line-height:1.2;
+}
+
+.hero__subtitle{
+    font-size:.8rem;
+}
+
+.hero__description{
+    font-size:.95rem;
+}
+
+.hero__buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero__buttons .btn{
+    width:100%;
+    max-width:320px;
+}
+
+.btn{
+    width:100%;
+    justify-content:center;
+}
+
+.stats{
+    margin-top:0;
+}
+
+.stats__container{
+    grid-template-columns:1fr;
+}
+
+.stats__card{
+    border:none;
+}
+
+.stats__number{
+    font-size:2.3rem;
+}
+
+.service__card,
+.project__card,
+.contact__card{
+    padding:1.5rem;
+}
+
+.project__image{
+    aspect-ratio:16/10;
+    height:auto;
+}
+.gallery__container{
+    grid-template-columns:1fr;
+}
+
+.gallery__item{
+    height:240px;
+}
+
+.testimonial__card{
+    padding:2rem 1.5rem;
+}
+
+.testimonial__description{
+    font-size:.95rem;
+}
+
+.faq__question{
+    padding:1rem;
+}
+
+.faq__answer p{
+    padding:0 1rem 1rem;
+}
+
+.contact__form{
+    padding:1.5rem;
+}
+
+.footer__container{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.footer__social{
+    justify-content:center;
+}
+
+.whatsapp-float{
+    width:55px;
+    height:55px;
+    right:18px;
+    bottom:18px;
+    font-size:1.7rem;
+}
+
+.scroll-top{
+    width:45px;
+    height:45px;
+    right:18px;
+    bottom:90px;
+}
+
+}
+
+/* Small Mobile (320px–400px) */
+@media (max-width: 400px) {
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .logo-subtext {
+        font-size: .65rem;
+    }
+
+    .hero__title {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .hero__description {
+        font-size: .9rem;
+        line-height: 1.5;
+    }
+
+    .section__title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .service__card {
+        padding: 1.2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact__form {
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project__image {
+        aspect-ratio: 4/3;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .about__image img {
+        height: 260px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .step__number {
+        width: 60px;
+        height: 60px;
+        font-size: 1.4rem;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scroll-top {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+} 
+
+
+
+/* Ultra Wide Screens */
+@media (min-width:1600px){
+
+.container{
+    max-width:1400px;
+}
+
+.hero__title{
+    font-size:4.5rem;
+}
+
+.hero__description{
+    font-size:1.2rem;
+}
+
 }
