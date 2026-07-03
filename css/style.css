@@ -231,9 +231,14 @@ input, textarea, select {
   font-family: var(--heading-font);
   font-size: 2rem;
   font-weight: var(--font-bold);
+
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+
   -webkit-background-clip: text;
+  background-clip: text; /* Add this line */
+
   -webkit-text-fill-color: transparent;
+
   line-height: 1;
 }
 
